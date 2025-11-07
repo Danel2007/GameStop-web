@@ -1,0 +1,135 @@
+:root {
+  --card-bg: #0f1720;
+  --accent: #e63946;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --radius: 12px;
+}
+
+body.taekwon-body {
+  font-family: "Oswald", "Segoe UI", "Arial Narrow", system-ui, sans-serif;
+  background: #f6f7f9;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+/* Contenedor centrado de las cards */
+.tk-cards-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  /* 👈 crea el espacio arriba */
+}
+
+
+/* Tarjeta base */
+.tk-player-card {
+  position: relative;
+  width: 250px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding-top: 80px;
+  /* deja espacio para la foto que sobresale */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow: visible;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tk-player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen que sobresale */
+.tk-player-card__img0 {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 155px;
+  height: 160px;
+  object-fit: cover;
+}
+.tk-player-card__img1 {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 155px;
+  height: 170px;
+  object-fit: cover;
+}
+.tk-player-card__img2 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+.tk-player-card__img3 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+.tk-player-card__img4 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+.tk-player-card__img5 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+.tk-player-card__img6 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Texto dentro del cuadrante */
+.tk-player-card__info {
+  color: #fff;
+  padding: 50px 15px 20px;
+}
+
+.tk-player-card__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.tk-player-card__desc {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --card-bg: #0f1720;
+  --accent: #e63946;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b2735, #090a0f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+  box-shadow: 25px var(--overlay);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: visible;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, var(--accent) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0.2;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+  position: relative;
+  top: -40px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  z-index: 1;
+  position: relative;
+}
+
+.naranja:hover {
+  box-shadow: 0 10px 25px #ff7b00;
+}
+.amarillo:hover {
+  box-shadow: 0 10px 25px #ffe600;
+}
+.azul:hover {
+  box-shadow: 0 10px 25px #004cff;
+}
+.azulclaro:hover {
+  box-shadow: 0 10px 25px #00b4ff;
+}
+.rosa:hover {
+  box-shadow: 0 10px 25px #ff007f;
+}
+.blanco:hover {
+  box-shadow: 0 10px 25px white;
+}
+
