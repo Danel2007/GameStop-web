@@ -1,48 +1,59 @@
 :root {
   --card-bg: #0f1720;
   --accent: #e63946;
-  --overlay: rgba(0, 0, 0, 0.6);
   --radius: 12px;
 }
 
+/* Fondo y cuerpo */
 body.taekwon-body {
   font-family: "Oswald", "Segoe UI", "Arial Narrow", system-ui, sans-serif;
-  background: #f6f7f9;
-  color: #111;
+  background: radial-gradient(circle at top, #1b2735, #090a0f);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding-top: 50px;
+  flex-direction: column;
+}
+/*titulo*/
+header {
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+}
+/* Contenedor general */
+.tk-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  margin-top: 100px;
 }
 
-/* Contenedor centrado de las cards */
-.tk-cards-grid {
+/* Cada fila (3 tarjetas) */
+.tk-cards-row {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  /* 👈 crea el espacio arriba */
 }
 
-
-/* Tarjeta base */
+/* Tarjeta */
 .tk-player-card {
   position: relative;
   width: 250px;
   background: var(--card-bg);
   border-radius: var(--radius);
   padding-top: 80px;
-  /* deja espacio para la foto que sobresale */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: visible;
-  transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .tk-player-card:hover {
@@ -50,26 +61,8 @@ body.taekwon-body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagen que sobresale */
-.tk-player-card__img0 {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 155px;
-  height: 160px;
-  object-fit: cover;
-}
-.tk-player-card__img1 {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 155px;
-  height: 170px;
-  object-fit: cover;
-}
-.tk-player-card__img2 {
+/* Imagen */
+.tk-player-card img {
   position: absolute;
   top: -70px;
   left: 50%;
@@ -77,45 +70,14 @@ body.taekwon-body {
   width: 160px;
   height: 190px;
   object-fit: cover;
-}
-.tk-player-card__img3 {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 190px;
-  object-fit: cover;
-}
-.tk-player-card__img4 {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 190px;
-  object-fit: cover;
-}
-.tk-player-card__img5 {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 190px;
-  object-fit: cover;
-}
-.tk-player-card__img6 {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 190px;
-  object-fit: cover;
+  transition: top 0.4s ease;
 }
 
-/* Texto dentro del cuadrante */
+.tk-player-card:hover img {
+  top: -90px;
+}
+
+/* Texto dentro */
 .tk-player-card__info {
   color: #fff;
   padding: 50px 15px 20px;

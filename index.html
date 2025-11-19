@@ -1,97 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GameStop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles-01.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
       <div class="container">
-        <div class="btn-menu">
-          <label for="btn-menu">☰</label>
-        </div>
         <div class="logo">
-          <img src="imagenes/gamestop blanco.png" alt="logo" class="logo">
+          <img src="imagenes/gamestop blanco.png" alt="logo" class="logo" />
         </div>
         <nav class="menu">
-            <a href="#" >
-                <img src="imagenes/png-transparent-instagram-instagram-new-design-round-social-media-instagram-new-icon-thumbnail.png" alt="instagram" class="redes">
-            </a>
-            <a href="#">
-                <img src="imagenes/facebook.webp" alt="facebook" class="redes">
-            </a>
-            <a href="#">
-                <img src="imagenes/twitter.jpg" alt="x" class="redes">
-            </a>
-            <a href="#">
-                <img src="imagenes/Youtube_logo.png" alt="YOUTUBE" class="redess">
-            </a>
+          <a href="https://www.instagram.com/gamestop/">
+            <img
+              src="imagenes/png-transparent-instagram-instagram-new-design-round-social-media-instagram-new-icon-thumbnail.png"
+              alt="instagram"
+              class="redes"
+            />
+          </a>
+          <a href="https://www.facebook.com/GameStop/?locale=es_LA">
+            <img src="imagenes/facebook.webp" alt="facebook" class="redes" />
+          </a>
+          <a href="https://x.com/gamestop">
+            <img src="imagenes/twitter.jpg" alt="x" class="redes" />
+          </a>
+          <a href="https://www.youtube.com/gamestopvideo">
+            <img src="imagenes/Youtube_logo.png" alt="YOUTUBE" class="redess" />
+          </a>
         </nav>
       </div>
     </header>
     <div class="capa"></div>
     <!--CONTACTO VERTICAL	--------------->
-    <input type="checkbox" id="btn-menu" />
-    <div class="container-menu">
-      <div class="cont-menu">
-        <nav>
-          <a href="#">Hasiera</a>
-          <a href="#">Parte hartzaileak</a>
-          <a href="#">Asken berriak</a>
-          <a href="#">Sailkapena</a>
-          <a href="#">Formularioa</a>
-          <a href="#">Informazioa</a>
-        </nav>
-        <label for="btn-menu">✖️</label>
-      </div>
-    </div>
+    <aside class="menu-lateral">
+      <nav>
+        <a href="index.html">Hasiera</a>
+        <a href="/Talde/taldeak.html">Parte hartzaileak</a>
+        <a href="#">Asken berriak</a>
+        <a href="#">Sailkapena</a>
+        <a href="/pages/formularioa.html">Formularioa</a>
+        <a href="#">Informazioa</a>
+      </nav>
+    </aside>
+
     <!---contenido principal (grid)*/---->
     <main class="contenido-principal">
       <section class="grid-info">
+        
         <div class="bloque">
-          <h2>Quiénes somos</h2>
-          <p>GameStop es una empresa dedicada al mundo de los videojuegos, ofreciendo las mejores ofertas, productos y experiencias para los jugadores.</p>
+          <h2>Nortzuk gara?</h2>
+          <p>
+            GameStop bideojokoen munduan aritzen den enpresa bat da
+            eskaintzarik, produkturik eta esperientziarik onenak eskainiz
+            jokalariak.
+          </p>
         </div>
-        <div class="bloque">
-          <h2>Nuestros productos</h2>
-          <p>Disponemos de consolas, videojuegos, accesorios y coleccionables para todos los públicos. Las últimas novedades siempre aquí.</p>
-        </div>
-        <div class="bloque">
-          <h2>Eventos y torneos</h2>
-          <p>Organizamos torneos, presentaciones y actividades especiales para los gamers más apasionados. ¡Únete a la comunidad!</p>
-        </div>
-        <div class="bloque">
-          <h2>Contacto</h2>
-          <p>¿Tienes dudas o sugerencias? Ponte en contacto con nosotros y te ayudaremos encantados.</p>
-        </div>
+
+        <a href="" class="bloque bloque-link">
+          <h2>Txapelketa</h2>
+          <p>
+            E-sports lehiaketa bat prestatu dugu, eta aurkezten den guztiak
+            parte hartu ahal izango du. Besteak beste, joko koperatiboak
+            (Valorant, adibidez) eta banakako jokoak (Super Smash Bros,
+            adibidez) jokatuko dira
+          </p>
+        </a>
+
+        <a href="" class="bloque bloque-link">
+          <h2>Ordutegiak eta Non?</h2>
+          <p>
+            Lehiaketa 2025eko azaroaren 11tik 2025eko azaroaren 21era bitartean
+            egingo da, joko guztien finalen ordutegiak eta sariak jarriko ditugu
+          </p>
+          <br>
+          <p>📍Pajares Kalea, 34, 48980 Santurtzi, Bizkaia</p>
+        </a>
+
+        <a href="/Talde/taldeak.html" class="bloque bloque-link">
+          <h2>Gure parte hartzaileak</h2>
+          <p>Hemen gure partideak argitaratuko ditugu</p>
+        </a>
+
+        <a href="pages/formularioa.html" class="bloque bloque-link">
+          <h2>Kontaktatu gurekin</h2>
+          <p>
+            Zalantza edo iradokizunik baduzu? Jar zaitez gurekin harremanetan
+            eta te pozik lagunduko dizugu.
+          </p>
+        </a>
       </section>
     </main>
 
-  <footer>
-    <!-- Cookies -->
-    <div id="cookies">
+    <footer>
+      <!-- Cookies -->
+      <div id="cookies">
         <p>
-            <i class='bx bx-cookie'></i>
-            <em>Cookie</em>-ak eta antzeko tresnak erabiltzen ditugu gure webgunea hobetzeko.
+          <i class="bx bx-cookie"></i>
+          <em>Cookie</em>-ak eta antzeko tresnak erabiltzen ditugu gure webgunea
+          hobetzeko.
         </p>
         <div>
-            <a id="customize" href="#">
-                <i class='bx bx-customize'></i> <em>Cookie</em>-ak pertsonalizatu
-            </a>
-            <a id="accept" href="#">
-                <i class='bx bx-check'></i> <em>Cookie</em>-ak onartu
-            </a>
+          <a id="customize" href="#">
+            <i class="bx bx-customize"></i> <em>Cookie</em>-ak pertsonalizatu
+          </a>
+          <a id="accept" href="#">
+            <i class="bx bx-check"></i> <em>Cookie</em>-ak onartu
+          </a>
         </div>
-    </div>
-    <!-- Cookies Fin -->
-  </footer>
-  <script src="js/cookies.js"></script>
-</body>
+      </div>
+      <!-- Cookies Fin -->
+    </footer>
+    <script src="js/cookies.js"></script>
+  </body>
 </html>

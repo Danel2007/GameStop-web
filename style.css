@@ -8,8 +8,8 @@
 body {
   background-image: url(imagenes/1920_gamestop.jpg);
   background-attachment: fixed;
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .capa {
@@ -34,6 +34,9 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+.header .container {
+  margin-left: 230px;
+}
 .container .btn-menu,
 .logo {
   float: left;
@@ -44,29 +47,30 @@ body {
   font-size: 25px;
   cursor: pointer;
 }
-.redes{
-    margin-top: 15px;
-    width: 55px;
-    height: 55px;
-    object-fit: cover;
+.redes {
+  margin-top: 15px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
 }
 
-.redess{
+.redess {
   width: 75px;
   height: 50px;
 }
 
-
 .logo {
-    font-size: 22px;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 300px;
-    height: 100px;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 300px;
+  height: 100px;
 }
 .container .menu {
+  right: 0;
   float: right;
   line-height: 100px;
+  margin-right: -400px;
 }
 .container .menu a {
   display: inline-block;
@@ -86,71 +90,59 @@ body {
 /*Fin de Estilos para el encabezado*/
 
 /*Menu lateral*/
-#btn-menu {
-  display: none;
-}
-.container-menu {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
+.menu-lateral {
+  position: fixed;
   top: 0;
   left: 0;
-  transition: all 500ms ease;
-  opacity: 0;
-  visibility: hidden;
-}
-#btn-menu:checked ~ .container-menu {
-  opacity: 1;
-  visibility: visible;
-}
-.cont-menu {
-  width: 100%;
-  max-width: 250px;
-  background: #1c1c1c;
+  width: 230px;
   height: 100vh;
-  position: relative;
+  background: #1c1c1c;
+  padding-top: 120px;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
 }
 
-.cont-menu nav a {
+.menu-lateral nav a {
+  font-size: 20px;
   display: block;
-  text-decoration: none;
-  padding: 20px;
+  padding: 45px 25px;
   color: #c7c7c7;
+  text-decoration: none;
+  transition: 0.3s;
   border-left: 5px solid transparent;
-  transition: all 400ms ease;
 }
-.cont-menu nav a:hover {
-  border-left: 5px solid #c7c7c7;
+
+.menu-lateral nav a:hover {
+  border-left: 5px solid #fff;
   background: #1f1f1f;
 }
-.cont-menu label {
-  position: absolute;
-  right: 5px;
-  top: 10px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-}
+
 /*Fin  menu lateral*/
 
 /* --- CONTENIDO PRINCIPAL ----*/
 .contenido-principal {
-  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 120px; /* espacio por el header fijo */
+  padding-top: 120px;
   padding-bottom: 50px;
+  margin-left: 230px;
 }
 
 .grid-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 30px;
   width: 90%;
   max-width: 1100px;
+}
+
+/*primer bloke  grid-column hasi lehenengo zutabe, amaitu lehenengo zutabe*/
+.grid-info .bloque:first-child {
+  grid-column: 1 / -1;
+  padding: 40px;
+  font-size: 1.2em;
 }
 
 .bloque {
@@ -180,4 +172,13 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #ddd;
+}
+.bloque a {
+color: white;
+}
+.bloque-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
