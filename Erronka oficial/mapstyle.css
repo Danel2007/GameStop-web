@@ -1,0 +1,258 @@
+:root {
+  --fondo: #f2f3f5;
+  --cuadro-bg: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.15);
+  --radio: 10px;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fondo);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: #e63946;
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+}
+
+/*Estilos para el encabezado*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header .container {
+  margin-left: 230px;
+}
+
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.redes {
+  margin-top: 15px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.redess {
+  width: 75px;
+  height: 50px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-left: 10px;
+  width: 300px;
+  height: 150px;
+}
+
+.container .menu {
+  right: 0;
+  float: right;
+  line-height: 100px;
+  margin-right: -400px;
+}
+
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.container .menu a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+
+/*Fin de Estilos para el encabezado*/
+
+/* Contenedor de los dos cuadros */
+.cuadros {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.fotos {
+  width: 150px;
+}
+
+/* Cada cuadro */
+.cuadro {
+  flex: 1 1 500px;
+  background: var(--cuadro-bg);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 15px var(--sombra);
+  padding: 30px;
+  min-height: 400px;
+}
+
+.cuadross {
+  flex: 1 1 500px;
+  background: var(--cuadro-bg);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 15px var(--sombra);
+  padding: 30px;
+  min-height: 400px;
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+/*responsibe*/
+@media (max-width: 900px) {
+  .cuadros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cuadro {
+    width: 90%;
+  }
+}
+
+.twitch-linea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.twitch-linea h2 {
+  margin: 0;
+}
+
+.twitch-linea img {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.gmail-btn-custom {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ea4335;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.gmail-btn-custom:hover {
+  background: #ff5a4e;
+}
+
+.horarios-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  text-align: center;
+}
+
+/*horarios responsive*/
+@media (max-width: 700px) {
+  .horarios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fotito {
+  width: 80px;
+}
+
+/*video bien echo*/
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/***********************************FOOTER***********************************/
+footer img {
+  width: 50px;
+}
+
+footer {
+  z-index: 1;
+  margin-top: 10px;
+  position: fixed;
+  /* Fijo en la página */
+  bottom: 0;
+  /* Siempre en la parte inferior */
+  left: 0;
+  width: 100%;
+  background-color: #5a5757;
+  /* Color de fondo del footer */
+  color: white;
+  /* Color del texto */
+  text-align: center;
+  /* Centrar el texto */
+  padding: 7px 0;
+  /* Espacio interno en la parte superior e inferior */
+  font-size: 14px;
+  /* Tamaño de la fuente */
+}
+
+.youtube {
+  margin-bottom: 2px;
+  width: 60px;
+}
+
+.x {
+  width: 70px;
+  margin-bottom: 5px;
+  margin-left: -10px;
+}
+/*flecha footer*/
+.improvisto {
+  width: 20px;
+}

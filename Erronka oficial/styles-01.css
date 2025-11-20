@@ -1,0 +1,60 @@
+#cookies {
+    /* Posizioa lehioarekiko finkoa izan behar da
+     *  - 10 pixeleko espazioa behean
+     *  - 10 pixeleko espazioa ezkerrean
+     */
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* beltza koloreko atzeko planoa */
+    background: rgb(230, 230, 230);
+    /* zuri koloreko testua */
+    color: rgb(60, 60, 60);
+    /* 10 pixeleko barne espazioa */
+    padding: 10px;
+    /* Ehuneko 35-eko zabalera */
+    width: 35%;
+    /* 5 pixeletan biribildutako izkinak */
+    border-radius: 5px;
+    /* 0.75-ko opakotasuna */
+    opacity: 0.75;
+
+}
+
+/**
+ * Estekak malguak bihurtu bata bestearen atzean
+ * eta blokearen erdialdean kokatu
+ */
+#cookies > div {
+    display: flex;
+    justify-content: center;
+}
+
+/**
+ * Estekei hurrengoak ezarri
+ */
+#cookies a {
+    /* 15 pixeletan biribildutako izkinak */
+    border-radius: 15px;
+    /* 5 pixeleko barne espazioa bertikalean 
+     * eta 10 pixelekoa horizontalean */
+    padding: 5px 10px;
+    /* 5 pixeleko kanpo espazioa horizontalean  */
+    margin: 0 5px;
+    /* Pixel bateko eta zuri kolorezko ertza */
+    border: 1px solid rgb(252, 0, 51);
+    /* zuri kolorezko testua */
+    color: rgb(60, 60, 60);
+}
+
+/**
+ * Estekeen gainean sagua dagoenean 
+ * #F03 RGB kolorea ezarri ertza eta atzeko planoari
+ */
+#cookies a:hover {
+    background-color: #F03;
+    border-color: rgb(255, 0, 51);
+    color: white;
+}

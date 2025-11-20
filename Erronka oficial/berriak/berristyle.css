@@ -1,0 +1,186 @@
+:root {
+  --fondo: #f2f3f5;
+  --cuadro-bg: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.15);
+  --radio: 10px;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fondo);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de los dos cuadros */
+.cuadros {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.fotos {
+  width: 150px;
+}
+
+/* Cada cuadro */
+.cuadro {
+  flex: 1 1 500px;
+  background: var(--cuadro-bg);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 15px var(--sombra);
+  padding: 30px;
+  min-height: 400px;
+}
+
+.cuadros {
+  flex: 1 1 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.foto-noticia {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn-leer {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ea4335;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-leer:hover {
+  background: #ff5a4e;
+}
+
+footer {
+  z-index: 1;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5a5757;
+  color: white;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 14px;
+}
+/*Estilos para el encabezado*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.header .container {
+  margin-left: 230px;
+}
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.redes {
+  margin-top: 15px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.redess {
+  width: 75px;
+  height: 50px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 300px;
+  height: 100px;
+}
+.container .menu {
+  right: 0;
+  float: right;
+  line-height: 100px;
+  margin-right: -400px;
+}
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menu lateral*/
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  background: #1c1c1c;
+  padding-top: 120px;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.menu-lateral nav a {
+  font-size: 20px;
+  display: block;
+  padding: 45px 25px;
+  color: #c7c7c7;
+  text-decoration: none;
+  transition: 0.3s;
+  border-left: 5px solid transparent;
+}
+
+.menu-lateral nav a:hover {
+  border-left: 5px solid #fff;
+  background: #1f1f1f;
+}
+
+/*Fin  menu lateral*/
